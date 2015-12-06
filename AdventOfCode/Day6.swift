@@ -25,12 +25,6 @@ class Day6 {
         let size = 1000
         var grid = Array.init(count: size, repeatedValue: Array.init(count: size, repeatedValue: false))
         
-        for x in 0..<size {
-            for y in 0..<size {
-                grid[x][y] = false
-            }
-        }
-        
         parseInput(input).forEach { instruction in
             print(instruction)
             for x in instruction.from.x...instruction.to.x {
