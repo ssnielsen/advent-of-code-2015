@@ -9,4 +9,7 @@
 import Foundation
 
 //print(Day5.partTwo(Util.getInput(5)!))
-print(Day1.partTwo(Util.getInput(1)!))
+//print(Day1.partTwo(Util.getInput(1)!))
+
+
+print(Day6.partOne(Util.getInput(6)!))
