@@ -19,6 +19,14 @@ class Day6 {
                 case .Toggle: return !oldValue
             }
         }
+        
+        func perform(oldValue: Int) -> Int {
+            switch self {
+                case .Off: return max(oldValue - 1, 0)
+                case .On: return oldValue + 1
+                case .Toggle: return oldValue + 2
+            }
+        }
     }
     
     static func partOne(input: String) -> Int {
@@ -37,6 +45,26 @@ class Day6 {
         return grid.reduce(0) { (res, line) in
             return res + line.reduce(0) { (res, light) in
                 return res + (light ? 1 : 0)
+            }
+        }
+    }
+    
+    static func partTwo(input: String) -> Int {
+        let size = 1000
+        var grid = Array.init(count: size, repeatedValue: Array.init(count: size, repeatedValue: 0))
+        
+        parseInput(input).forEach { instruction in
+            print(instruction)
+            for x in instruction.from.x...instruction.to.x {
+                for y in instruction.from.y...instruction.to.y {
+                    grid[x][y] = instruction.action.perform(grid[x][y])
+                }
+            }
+        }
+        
+        return grid.reduce(0) { (res, line) in
+            return res + line.reduce(0) { (res, light) in
+                return res + light
             }
         }
     }
