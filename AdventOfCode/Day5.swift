@@ -37,6 +37,45 @@ class Day5 {
     }
     
     static func partTwo(input: String) -> Int {
-        return 0
+//        let groupRegex = Regex("(?'letters'[a-z]{2})[a-z](?P=letters)")
+//        let letterRegex = Regex("(?'letter'[a-z])[a-z](?P=letter)")
+        
+        let containsTwoOfTheSamePair: String -> Bool = { word in
+            var pairs = [String]()
+            var index = 0
+            let length = word.characters.count
+            
+            while index < word.characters.count - 1 {
+                let this = word[word.startIndex.advancedBy(index)]
+                let next = word[word.startIndex.advancedBy(index + 1)]
+                let pair = "\(this)\(next)"
+                
+                if pairs.contains(pair) {
+                    return true
+                }
+                
+                pairs.append(pair)
+                
+                // Skip a letter if three of the same letter occurs, otherwise go to next letter
+                index += index < length - 2 && this == next && word[word.startIndex.advancedBy(index + 2)] == next ? 2 : 1
+             }
+            
+            return false
+        }
+        
+        let containsDuplicateWithLetterInbetween: String -> Bool = { word in
+            for (index, letter) in word.characters.enumerate() {
+                if (index > word.characters.count - 2) {
+                    return false
+                } else if letter == word[word.startIndex.advancedBy(index + 2)] {
+                    return true
+                }
+            }
+            return false
+        }
+        
+        return Util.splitLines(input).reduce(0) { (res, word) in
+            return containsTwoOfTheSamePair(word) && containsDuplicateWithLetterInbetween(word) ? res+1 : res
+        }
     }
 }
