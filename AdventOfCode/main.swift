@@ -10,3 +10,4 @@ import Foundation
 
 let input = Util.getInput(7)!
 print(Day7.partOne(input))
+print(Day7.partTwo(input))
