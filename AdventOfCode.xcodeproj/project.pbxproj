@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45129B091C15FDC2002C5531 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B081C15FDC2002C5531 /* Day7.swift */; };
+		45129B0B1C175B28002C5531 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0A1C175B28002C5531 /* Day8.swift */; };
+		45129B0D1C1DE871002C5531 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0C1C1DE871002C5531 /* Day9.swift */; };
+		45129B0F1C1DF41C002C5531 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0E1C1DF41C002C5531 /* Day10.swift */; };
 		459FA46A1C138D9B00E84222 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4691C138D9B00E84222 /* main.swift */; };
 		459FA4741C14828D00E84222 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4731C14828D00E84222 /* Day1.swift */; };
 		459FA4761C1482AB00E84222 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4751C1482AB00E84222 /* Day2.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45129B081C15FDC2002C5531 /* Day7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
+		45129B0A1C175B28002C5531 /* Day8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
+		45129B0C1C1DE871002C5531 /* Day9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
+		45129B0E1C1DF41C002C5531 /* Day10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		459FA4661C138D9B00E84222 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		459FA4691C138D9B00E84222 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventOfCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 				459FA4791C14831500E84222 /* Day4.swift */,
 				459FA47B1C14837800E84222 /* Day5.swift */,
 				459FA47D1C14839400E84222 /* Day6.swift */,
+				45129B081C15FDC2002C5531 /* Day7.swift */,
+				45129B0A1C175B28002C5531 /* Day8.swift */,
+				45129B0C1C1DE871002C5531 /* Day9.swift */,
+				45129B0E1C1DF41C002C5531 /* Day10.swift */,
 				459FA47F1C1483F500E84222 /* Util.swift */,
 				459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */,
 			);
@@ -143,12 +155,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				459FA4741C14828D00E84222 /* Day1.swift in Sources */,
+				45129B0B1C175B28002C5531 /* Day8.swift in Sources */,
 				459FA47A1C14831500E84222 /* Day4.swift in Sources */,
 				459FA4761C1482AB00E84222 /* Day2.swift in Sources */,
 				459FA4801C1483F500E84222 /* Util.swift in Sources */,
+				45129B0F1C1DF41C002C5531 /* Day10.swift in Sources */,
 				459FA4781C1482E300E84222 /* Day3.swift in Sources */,
+				45129B0D1C1DE871002C5531 /* Day9.swift in Sources */,
 				459FA47C1C14837800E84222 /* Day5.swift in Sources */,
 				459FA47E1C14839400E84222 /* Day6.swift in Sources */,
+				45129B091C15FDC2002C5531 /* Day7.swift in Sources */,
 				459FA46A1C138D9B00E84222 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +292,7 @@
 				459FA46F1C138D9B00E84222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
