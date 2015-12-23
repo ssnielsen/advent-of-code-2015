@@ -10,55 +10,51 @@ import Foundation
 
 class Day23 {
     static func partOne(input: String) -> Int {
-        var registers = ["a": 0, "b": 0]
         let program = parseInput(input)
-        
-        evaluateProgram(program, registers: &registers)
+        let registers = evaluateProgram(program, registers: ["a": 0, "b": 0])
         
         return registers["b"]!
     }
     
     static func partTwo(input: String) -> Int {
-        var registers = ["a": 1, "b": 0]
         let program = parseInput(input)
-        
-        evaluateProgram(program, registers: &registers)
+        let registers = evaluateProgram(program, registers: ["a": 1, "b": 0])
         
         return registers["b"]!
     }
     
-    static func evaluateProgram(program: [Instruction], inout registers: [String:Int], pointer: Int = 0) {
+    static func evaluateProgram(program: [Instruction], var registers: [String:Int], pointer: Int = 0) -> [String: Int] {
         if 0 > pointer || pointer >= program.count {
-            return
+            return registers
         }
         
         switch program[pointer] {
         case let .Half(register):
             registers[register]! /= 2
-            evaluateProgram(program, registers: &registers, pointer: pointer + 1)
+            return evaluateProgram(program, registers: registers, pointer: pointer + 1)
         case let .Triple(register):
             registers[register]! *= 3
-            evaluateProgram(program, registers: &registers, pointer: pointer + 1)
+            return evaluateProgram(program, registers: registers, pointer: pointer + 1)
         case let .Increment(register):
             registers[register]! += 1
-            evaluateProgram(program, registers: &registers, pointer: pointer + 1)
+            return evaluateProgram(program, registers: registers, pointer: pointer + 1)
         case let .Jump(distance):
-            evaluateProgram(program, registers: &registers, pointer: pointer + distance)
+            return evaluateProgram(program, registers: registers, pointer: pointer + distance)
         case let .JumpIfPositive(register, distance):
             if registers[register]! % 2 == 0 {
-                evaluateProgram(program, registers: &registers, pointer: pointer + distance)
+                return evaluateProgram(program, registers: registers, pointer: pointer + distance)
             } else {
-                evaluateProgram(program, registers: &registers, pointer: pointer + 1)
+                return evaluateProgram(program, registers: registers, pointer: pointer + 1)
             }
         case let .JumpIfOne(register, distance):
             if registers[register]! == 1 {
-                evaluateProgram(program, registers: &registers, pointer: pointer + distance)
+                return evaluateProgram(program, registers: registers, pointer: pointer + distance)
             } else {
-                evaluateProgram(program, registers: &registers, pointer: pointer + 1)
+                return evaluateProgram(program, registers: registers, pointer: pointer + 1)
             }
         case .Fault:
             print("Program contains faulty instruction. Exiting")
-            return
+            return [:]
         }
     }
     
