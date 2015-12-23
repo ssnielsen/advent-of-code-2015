@@ -11,7 +11,7 @@ import Foundation
 class Util {
     static func getInput(day: Int) -> String? {
         do {
-            return try NSString(contentsOfFile: "/Users/Soren/Developer/AdventOfCode/AdventOfCode/Input/\(day)", encoding: NSUTF8StringEncoding) as String
+            return try NSString(contentsOfFile: "./AdventOfCode/Input/\(day)", encoding: NSUTF8StringEncoding) as String
         } catch {
             print("Cannot find input")
             return nil

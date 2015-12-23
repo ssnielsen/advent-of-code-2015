@@ -11,6 +11,7 @@
 		45129B0B1C175B28002C5531 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0A1C175B28002C5531 /* Day8.swift */; };
 		45129B0D1C1DE871002C5531 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0C1C1DE871002C5531 /* Day9.swift */; };
 		45129B0F1C1DF41C002C5531 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0E1C1DF41C002C5531 /* Day10.swift */; };
+		452C329F1C2AE6BE0042DAAF /* Day23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C329E1C2AE6BE0042DAAF /* Day23.swift */; };
 		459FA46A1C138D9B00E84222 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4691C138D9B00E84222 /* main.swift */; };
 		459FA4741C14828D00E84222 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4731C14828D00E84222 /* Day1.swift */; };
 		459FA4761C1482AB00E84222 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4751C1482AB00E84222 /* Day2.swift */; };
@@ -46,6 +47,26 @@
 		45129B0A1C175B28002C5531 /* Day8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
 		45129B0C1C1DE871002C5531 /* Day9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		45129B0E1C1DF41C002C5531 /* Day10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
+		452C329E1C2AE6BE0042DAAF /* Day23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day23.swift; sourceTree = "<group>"; };
+		452C32A11C2AEEEE0042DAAF /* 1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1; sourceTree = "<group>"; };
+		452C32A21C2AEEEE0042DAAF /* 10 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 10; sourceTree = "<group>"; };
+		452C32A31C2AEEEE0042DAAF /* 11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 11; sourceTree = "<group>"; };
+		452C32A41C2AEEEE0042DAAF /* 12 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 12; sourceTree = "<group>"; };
+		452C32A51C2AEEEE0042DAAF /* 13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 13; sourceTree = "<group>"; };
+		452C32A61C2AEEEE0042DAAF /* 14 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 14; sourceTree = "<group>"; };
+		452C32A71C2AEEEE0042DAAF /* 15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 15; sourceTree = "<group>"; };
+		452C32A81C2AEEEE0042DAAF /* 16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 16; sourceTree = "<group>"; };
+		452C32A91C2AEEEE0042DAAF /* 17 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 17; sourceTree = "<group>"; };
+		452C32AA1C2AEEEE0042DAAF /* 18 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 18; sourceTree = "<group>"; };
+		452C32AB1C2AEEEE0042DAAF /* 2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 2; sourceTree = "<group>"; };
+		452C32AC1C2AEEEE0042DAAF /* 23 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 23; sourceTree = "<group>"; };
+		452C32AD1C2AEEEE0042DAAF /* 3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 3; sourceTree = "<group>"; };
+		452C32AE1C2AEEEE0042DAAF /* 4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 4; sourceTree = "<group>"; };
+		452C32AF1C2AEEEE0042DAAF /* 5 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 5; sourceTree = "<group>"; };
+		452C32B01C2AEEEE0042DAAF /* 6 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 6; sourceTree = "<group>"; };
+		452C32B11C2AEEEE0042DAAF /* 7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 7; sourceTree = "<group>"; };
+		452C32B21C2AEEEE0042DAAF /* 8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 8; sourceTree = "<group>"; };
+		452C32B31C2AEEEE0042DAAF /* 9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 9; sourceTree = "<group>"; };
 		459FA4661C138D9B00E84222 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		459FA4691C138D9B00E84222 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventOfCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -77,9 +98,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452C32A01C2AEEEE0042DAAF /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				452C32A11C2AEEEE0042DAAF /* 1 */,
+				452C32A21C2AEEEE0042DAAF /* 10 */,
+				452C32A31C2AEEEE0042DAAF /* 11 */,
+				452C32A41C2AEEEE0042DAAF /* 12 */,
+				452C32A51C2AEEEE0042DAAF /* 13 */,
+				452C32A61C2AEEEE0042DAAF /* 14 */,
+				452C32A71C2AEEEE0042DAAF /* 15 */,
+				452C32A81C2AEEEE0042DAAF /* 16 */,
+				452C32A91C2AEEEE0042DAAF /* 17 */,
+				452C32AA1C2AEEEE0042DAAF /* 18 */,
+				452C32AB1C2AEEEE0042DAAF /* 2 */,
+				452C32AC1C2AEEEE0042DAAF /* 23 */,
+				452C32AD1C2AEEEE0042DAAF /* 3 */,
+				452C32AE1C2AEEEE0042DAAF /* 4 */,
+				452C32AF1C2AEEEE0042DAAF /* 5 */,
+				452C32B01C2AEEEE0042DAAF /* 6 */,
+				452C32B11C2AEEEE0042DAAF /* 7 */,
+				452C32B21C2AEEEE0042DAAF /* 8 */,
+				452C32B31C2AEEEE0042DAAF /* 9 */,
+			);
+			name = Input;
+			path = AdventOfCode/Input;
+			sourceTree = "<group>";
+		};
 		459FA45D1C138D9B00E84222 = {
 			isa = PBXGroup;
 			children = (
+				452C32A01C2AEEEE0042DAAF /* Input */,
 				459FA4681C138D9B00E84222 /* AdventOfCode */,
 				459FA4671C138D9B00E84222 /* Products */,
 			);
@@ -115,6 +164,7 @@
 				45C81CBA1C29A06D00F955AF /* Day16.swift */,
 				45C81CBB1C29A06D00F955AF /* Day17.swift */,
 				45C81CBC1C29A06D00F955AF /* Day18.swift */,
+				452C329E1C2AE6BE0042DAAF /* Day23.swift */,
 				459FA47F1C1483F500E84222 /* Util.swift */,
 				459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */,
 			);
@@ -188,6 +238,7 @@
 				45129B0F1C1DF41C002C5531 /* Day10.swift in Sources */,
 				45C81CC31C29A06D00F955AF /* Day17.swift in Sources */,
 				459FA4781C1482E300E84222 /* Day3.swift in Sources */,
+				452C329F1C2AE6BE0042DAAF /* Day23.swift in Sources */,
 				45C81CBF1C29A06D00F955AF /* Day13.swift in Sources */,
 				45C81CC01C29A06D00F955AF /* Day14.swift in Sources */,
 				45C81CC21C29A06D00F955AF /* Day16.swift in Sources */,
