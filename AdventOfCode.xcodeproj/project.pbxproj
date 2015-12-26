@@ -13,6 +13,7 @@
 		45129B0F1C1DF41C002C5531 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45129B0E1C1DF41C002C5531 /* Day10.swift */; };
 		452C329F1C2AE6BE0042DAAF /* Day23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C329E1C2AE6BE0042DAAF /* Day23.swift */; };
 		452C32B51C2B31910042DAAF /* Day20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C32B41C2B31910042DAAF /* Day20.swift */; };
+		452C32B71C2F26BE0042DAAF /* Day21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C32B61C2F26BE0042DAAF /* Day21.swift */; };
 		459FA46A1C138D9B00E84222 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4691C138D9B00E84222 /* main.swift */; };
 		459FA4741C14828D00E84222 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4731C14828D00E84222 /* Day1.swift */; };
 		459FA4761C1482AB00E84222 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FA4751C1482AB00E84222 /* Day2.swift */; };
@@ -69,6 +70,7 @@
 		452C32B21C2AEEEE0042DAAF /* 8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 8; sourceTree = "<group>"; };
 		452C32B31C2AEEEE0042DAAF /* 9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 9; sourceTree = "<group>"; };
 		452C32B41C2B31910042DAAF /* Day20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day20.swift; sourceTree = "<group>"; };
+		452C32B61C2F26BE0042DAAF /* Day21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day21.swift; sourceTree = "<group>"; };
 		459FA4661C138D9B00E84222 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		459FA4691C138D9B00E84222 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventOfCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				45C81CBB1C29A06D00F955AF /* Day17.swift */,
 				45C81CBC1C29A06D00F955AF /* Day18.swift */,
 				452C32B41C2B31910042DAAF /* Day20.swift */,
+				452C32B61C2F26BE0042DAAF /* Day21.swift */,
 				452C329E1C2AE6BE0042DAAF /* Day23.swift */,
 				459FA47F1C1483F500E84222 /* Util.swift */,
 				459FA4701C145F7700E84222 /* AdventOfCode-Bridging-Header.h */,
@@ -249,6 +252,7 @@
 				45129B0D1C1DE871002C5531 /* Day9.swift in Sources */,
 				459FA47C1C14837800E84222 /* Day5.swift in Sources */,
 				459FA47E1C14839400E84222 /* Day6.swift in Sources */,
+				452C32B71C2F26BE0042DAAF /* Day21.swift in Sources */,
 				45C81CBE1C29A06D00F955AF /* Day12.swift in Sources */,
 				45C81CC41C29A06D00F955AF /* Day18.swift in Sources */,
 				45129B091C15FDC2002C5531 /* Day7.swift in Sources */,

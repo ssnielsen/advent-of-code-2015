@@ -8,6 +8,6 @@
 
 import Foundation
 
-let input = Util.getInput(23)!
-print(Day23.partOne(input))
-print(Day23.partTwo(input))
+let input = Util.getInput(21)!
+print(Day21.partOne(input))
+//print(Day20.partTwo(input))
