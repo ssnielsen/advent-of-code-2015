@@ -15,21 +15,49 @@ class Day21 {
         
         return builds.map { build in
             return (build.0, matchup(build.1, boss: boss))
-        }.filter { (_, won) in
-            return won
-        }.map { (gold, _) in
-            return gold
-        }.sort().first!
+            }.filter { (_, won) in
+                return won
+            }.map { (gold, _) in
+                return gold
+            }.sort().first!
+    }
+    
+    static func partTwo(input: String) -> Int {
+        let boss = getBoss(input)
+        let builds = computeBuilds()
+        
+        return builds.map { build in
+            return (build.0, matchup(build.1, boss: boss))
+            }.filter { (_, won) in
+                return !won
+            }.map { (gold, _) in
+                return gold
+            }.sort().last!
     }
     
     static func computeBuilds() -> [(Int, Player)] {
         var builds = [(Int,Player)]()
         
-        func a() -> Int {
-            return 2
+        for weapon in weapons {
+            for armor in armors {
+                for ring1Index in 0..<rings.count {
+                    for ring2Index in 0..<rings.count {
+                        if (rings[ring1Index] == nil && rings[ring2Index] == nil) || ring1Index == ring2Index {
+                            continue
+                        }
+                        
+                        let ring1 = rings[ring1Index]
+                        let ring2 = rings[ring2Index]
+                        
+                        let damagePoints = weapon.damage + (armor?.damage ?? 0) + (ring1?.damage ?? 0) + (ring2?.damage ?? 0)
+                        let armorPoints = weapon.armor + (armor?.armor ?? 0) + (ring1?.armor ?? 0) + (ring2?.armor ?? 0)
+                        let cost = weapon.cost + (armor?.cost ?? 0) + (ring1?.cost ?? 0) + (ring2?.cost ?? 0)
+                        let build = Player(hitpoints: 100, damage: damagePoints, armor: armorPoints)
+                        builds.append((cost, build))
+                    }
+                }
+            }
         }
-        
-        let b = a()
         
         return builds
     }
@@ -48,7 +76,7 @@ class Day21 {
             }
         }
         
-        return boss.hitpoints > 0
+        return boss.hitpoints <= 0
     }
     
     enum Turn {
@@ -80,7 +108,7 @@ class Day21 {
         let armor: Int
     }
     
-    let weapons = [
+    static let weapons = [
         Item(name: "Dagger",     cost: 8,  damage: 4, armor: 0),
         Item(name: "Shortsword", cost: 10, damage: 5, armor: 0),
         Item(name: "Warhammer",  cost: 25, damage: 6, armor: 0),
@@ -88,20 +116,22 @@ class Day21 {
         Item(name: "Greataxe",   cost: 74, damage: 8, armor: 0)
     ]
     
-    let armor = [
+    static let armors: [Item?] = [
         Item(name: "Leather",    cost: 13,  damage: 0, armor: 1),
         Item(name: "Chainmail",  cost: 31,  damage: 0, armor: 2),
         Item(name: "Splintmail", cost: 53,  damage: 0, armor: 3),
         Item(name: "Bandedmail", cost: 75,  damage: 0, armor: 4),
-        Item(name: "Platemail",  cost: 102, damage: 0, armor: 5)
+        Item(name: "Platemail",  cost: 102, damage: 0, armor: 5),
+        nil
     ]
     
-    let rings = [
+    static let rings: [Item?] = [
         Item(name: "Damage+1",  cost: 25,  damage: 1, armor: 0),
         Item(name: "Damage+2",  cost: 50,  damage: 2, armor: 0),
         Item(name: "Damage+3",  cost: 100, damage: 3, armor: 0),
         Item(name: "Defense+1", cost: 20,  damage: 0, armor: 1),
         Item(name: "Defense+2", cost: 40,  damage: 0, armor: 2),
-        Item(name: "Defense+3", cost: 80,  damage: 0, armor: 3)
+        Item(name: "Defense+3", cost: 80,  damage: 0, armor: 3),
+        nil
     ]
 }
